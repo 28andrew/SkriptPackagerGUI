@@ -145,7 +145,7 @@ public class CompileFrame extends JFrame{
 		folderName.setColumns(10);
 		
 		lblJdkLocation = new JLabel("JDK Location:");
-		lblJdkLocation.setBounds(299, 263, 76, 16);
+		lblJdkLocation.setBounds(299, 263, 105, 16);
 		getContentPane().add(lblJdkLocation);
 		
 		jdkInfo = new JLabel("If not provided, it must be in the variable JAVA_HOME");

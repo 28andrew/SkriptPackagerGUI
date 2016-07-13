@@ -2,6 +2,7 @@ package com.gmail.xxandrew28xx;
 
 import java.io.File;
 import java.net.URL;
+import java.net.URLDecoder;
 
 import javax.swing.JFrame;
 
@@ -21,10 +22,35 @@ public class SkriptPackagerGUI{
 	public static MainSkript ms;
 	
 	public static void main(String[] args) {
+		try{
+			String path = SkriptPackagerGUI.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+			if (path.endsWith(".jar")){
+				path = path.substring(0, path.lastIndexOf("/") + 1);
+				path += "/";
+			}
+			String decodedPath = URLDecoder.decode(path, "UTF-8");
+			setCurrentDirectory(decodedPath);
+			System.out.println(System.getProperty("user.dir"));
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 		MainFrame mf = new MainFrame();
 		mf.setVisible(true);
 		visible = mf;
 	}
+	public static boolean setCurrentDirectory(String directory_name)
+    {
+        boolean result = false;  // Boolean indicating whether directory was set
+        File    directory;       // Desired current working directory
+
+        directory = new File(directory_name).getAbsoluteFile();
+        if (directory.exists() || directory.mkdirs())
+        {
+            result = (System.setProperty("user.dir", directory.getAbsolutePath()) != null);
+        }
+
+        return result;
+    }
 	public static void next(){
 		visible.setVisible(false);
 		if (visible instanceof MainFrame){

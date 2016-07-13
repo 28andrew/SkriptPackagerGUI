@@ -85,6 +85,7 @@ public class CompileFrame extends JFrame{
     	
 		super("Skript Packager GUI");
 		instance = this;
+		
 		//DEFAULTS (not using a seperate method due to WindowBuilder parser
 		setIconImage(Toolkit.getDefaultToolkit().getImage(MainFrame.class.getResource("/com/gmail/xxandrew28xx/icon.png")));
 		setResizable(false);
@@ -262,6 +263,7 @@ public class CompileFrame extends JFrame{
     	File folder = new File("Custom/src/main/java/skript" + id + "/" + ms.getName());
     	folder.mkdirs();
     	try{
+    		
     		FileUtils.copyDirectory(new File("SkriptPackager/src/main/java/com/gmail/xXAndrew28Xx"), 
 			new File("Custom/src/main/java/skript" + id + "/" + ms.getName()), false);
     		//Change Package Names

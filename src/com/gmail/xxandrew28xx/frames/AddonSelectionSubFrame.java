@@ -1,4 +1,4 @@
-package com.gmail.xxandrew28xx;
+package com.gmail.xxandrew28xx.frames;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -19,6 +19,8 @@ import java.awt.Color;
 import javax.swing.JEditorPane;
 import javax.swing.JTextPane;
 
+import com.gmail.xxandrew28xx.FixedVersion;
+import com.gmail.xxandrew28xx.StringToVersion;
 import com.gmail.xxandrew28xx.SkriptPackagerGUI.Addon;
 
 import java.awt.SystemColor;

@@ -1,4 +1,4 @@
-package com.gmail.xxandrew28xx;
+package com.gmail.xxandrew28xx.frames;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import com.gmail.xxandrew28xx.SkriptPackagerGUI;
 import com.gmail.xxandrew28xx.SkriptPackagerGUI.MainSkript;
 
 import java.awt.Color;

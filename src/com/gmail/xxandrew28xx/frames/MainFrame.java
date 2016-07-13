@@ -1,4 +1,4 @@
-package com.gmail.xxandrew28xx;
+package com.gmail.xxandrew28xx.frames;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -15,6 +15,9 @@ import javax.swing.JTextPane;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
+
+import com.gmail.xxandrew28xx.SkriptPackagerGUI;
+
 import javax.swing.JButton;
 
 public class MainFrame extends JFrame {

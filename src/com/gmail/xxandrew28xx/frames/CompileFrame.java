@@ -1,4 +1,4 @@
-package com.gmail.xxandrew28xx;
+package com.gmail.xxandrew28xx.frames;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -37,10 +37,13 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.yaml.snakeyaml.Yaml;
 
-import com.gmail.xxandrew28xx.SkriptDependencySelectionFrame.SkriptFile;
+import com.gmail.xxandrew28xx.FixedVersion;
+import com.gmail.xxandrew28xx.SkriptPackagerGUI;
+import com.gmail.xxandrew28xx.StringToVersion;
 import com.gmail.xxandrew28xx.SkriptPackagerGUI.Addon;
 import com.gmail.xxandrew28xx.SkriptPackagerGUI.MainSkript;
 import com.gmail.xxandrew28xx.SkriptPackagerGUI.VersionToDL;
+import com.gmail.xxandrew28xx.frames.SkriptDependencySelectionFrame.SkriptFile;
 
 import javax.swing.JLabel;
 import javax.swing.JTextField;

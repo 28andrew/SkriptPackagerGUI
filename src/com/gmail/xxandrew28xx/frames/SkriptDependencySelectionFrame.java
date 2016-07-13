@@ -1,4 +1,4 @@
-package com.gmail.xxandrew28xx;
+package com.gmail.xxandrew28xx.frames;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -16,6 +16,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 import javax.swing.UIManager;
+
+import com.gmail.xxandrew28xx.SkriptPackagerGUI;
 
 public class SkriptDependencySelectionFrame extends JFrame {
 	JPanel panel;

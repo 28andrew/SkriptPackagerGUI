@@ -1,4 +1,4 @@
-package com.gmail.xxandrew28xx;
+package com.gmail.xxandrew28xx.frames;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -16,6 +16,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import com.gmail.xxandrew28xx.FixedVersion;
+import com.gmail.xxandrew28xx.SkriptPackagerGUI;
+import com.gmail.xxandrew28xx.StringToVersion;
 import com.gmail.xxandrew28xx.SkriptPackagerGUI.Addon;
 import com.gmail.xxandrew28xx.SkriptPackagerGUI.VersionToDL;
 

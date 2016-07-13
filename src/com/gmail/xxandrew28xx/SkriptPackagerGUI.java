@@ -5,6 +5,13 @@ import java.net.URL;
 
 import javax.swing.JFrame;
 
+import com.gmail.xxandrew28xx.frames.AddonSelectionFrame;
+import com.gmail.xxandrew28xx.frames.ClaimJarFrame;
+import com.gmail.xxandrew28xx.frames.CompileFrame;
+import com.gmail.xxandrew28xx.frames.MainFrame;
+import com.gmail.xxandrew28xx.frames.SkriptDependencySelectionFrame;
+import com.gmail.xxandrew28xx.frames.SkriptOptionsFrame;
+
 public class SkriptPackagerGUI{
 	/*
 	 * USES SP.ZIP (Skript Packager 0.0.1-SNAPSHOT)
@@ -103,7 +110,7 @@ public class SkriptPackagerGUI{
 
 	}
 	public static class Addon{
-		VersionToDL download;
+		public VersionToDL download;
 		String name;
 		public Addon(VersionToDL download, String name){
 			this.download = download;

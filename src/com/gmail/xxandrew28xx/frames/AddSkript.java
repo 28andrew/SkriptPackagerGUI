@@ -18,6 +18,8 @@ import javax.swing.JTextPane;
 import javax.swing.UIManager;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import org.apache.commons.io.FilenameUtils;
+
 import com.gmail.xxandrew28xx.frames.SkriptDependencySelectionFrame.SkriptFile;
 
 import java.awt.Color;
@@ -102,7 +104,7 @@ public class AddSkript extends JFrame{
 					}
 				}
 				SkriptDependencySelectionFrame.list.add(f.getName());
-				SkriptDependencySelectionFrame.skripts.put(f.getName(), new SkriptFile(f.getAbsolutePath(), getFileName(f), hide_sk));
+				SkriptDependencySelectionFrame.skripts.put(f.getName(), new SkriptFile(f.getAbsolutePath(), FilenameUtils.removeExtension(getFileName(f)), hide_sk));
 				setVisible(false);
 			}});
 		

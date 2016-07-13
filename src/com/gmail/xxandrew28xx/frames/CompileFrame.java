@@ -317,6 +317,9 @@ public class CompileFrame extends JFrame{
     		Map<String, Object> scripts = new LinkedHashMap<String, Object>();
     		for (Entry<String, SkriptFile> entry : SkriptDependencySelectionFrame.skripts.entrySet()){
     			String name = entry.getKey();
+    			if (name.endsWith(".sk")){
+    				name = name.substring(0, name.length() - 3);
+    			}
     			SkriptFile sk = entry.getValue();
     			
     			File f = new File(sk.getPath());

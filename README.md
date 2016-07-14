@@ -9,4 +9,4 @@ SkriptPackagerGUI does this:
 - mvn install
 - Gives jar to user
 
-[Check out SkriptPackagerGUI](https://github.com/xXAndrew28Xx/SkriptPackagerGUI)
+[Check out SkriptPackager](https://github.com/xXAndrew28Xx/SkriptPackager)
